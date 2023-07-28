@@ -6,8 +6,8 @@ https://www.youtube.com/watch?v=jfKfPfyJRdk
 Lofi Girl - lofi hip hop radio 💤 - beats to sleep/chill to
 https://www.youtube.com/watch?v=rUxyKA_-grg
 
-STEEZYASF\*\*\* - lofi hip hop radio – beats to sleep/study/relax to ☕
-https://www.youtube.com/watch?v=KC_oey5dbmI
+Lofi Girl - synthwave radio 🌌 - beats to chill/game to
+https://www.youtube.com/watch?v=4xDzrJKXOOY
 
 STEEZYASF\*\*\* - Coffee Shop Radio ☕ - 24/7 lofi & jazzy hip-hop beats
 https://www.youtube.com/watch?v=lP26UCnoH9s
