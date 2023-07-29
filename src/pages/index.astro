@@ -1,7 +1,10 @@
 ---
+import Player from "../components/Player.svelte";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main></main>
+  <main class="flex flex-col items-center w-full">
+    <Player client:load />
+  </main>
 </Layout>
