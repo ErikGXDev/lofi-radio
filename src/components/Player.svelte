@@ -17,9 +17,11 @@
 
   let curr = 0;
   let ytplayer: PlayerType;
-  let playerElement: HTMLElement;
   let playerState;
   let playing = false;
+
+  let hideBanner = false;
+  let bannerTransition = false;
 
   function nextVideo() {
     curr = (curr + 1) % songs.length;
@@ -76,6 +78,31 @@
 </script>
 
 <div class="vignette" />
+{#if !hideBanner}
+  <div
+    class="z-30 absolute left-0 top-0"
+    style={bannerTransition
+      ? "animation: fade-out 1s ease-in-out; animation-iteration-count: 1;"
+      : ""}
+  >
+    <div
+      class="w-screen h-screen from-zinc-10 bg-black bg-[url(/lofiwallpaper.jpg)] bg-cover brightness-50 absolute"
+    />
+    <button
+      class="w-screen h-screen text-2xl absolute"
+      on:click={() => {
+        bannerTransition = true;
+        setTimeout(() => {
+          hideBanner = true;
+        }, 900);
+
+        ytplayer.playVideo();
+      }}
+    >
+      Click anywhere to start the lofi player!
+    </button>
+  </div>
+{/if}
 <div class="h-screen w-screen overflow-hidden -z-10 brightness-75 absolute">
   <div
     id={_id}
@@ -83,7 +110,7 @@
   />
 </div>
 <div
-  class="flex flex-col gap-4 mt-4 absolute bottom-0 left-0 p-4 bg-black/25 rounded-tr-3xl"
+  class="flex flex-col gap-4 mt-4 absolute bottom-0 left-0 p-4 bg-black/25 rounded-tr-3xl z-20"
 >
   <div class="flex flex-col pr-2">
     <h2 class="flex items-center gap-2">

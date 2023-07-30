@@ -3,6 +3,24 @@
 @tailwind utilities;
 
 @layer components {
+  @keyframes fade-out {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+
   .vignette {
     position: fixed;
     top: 0;
