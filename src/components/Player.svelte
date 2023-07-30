@@ -94,6 +94,7 @@
         bannerTransition = true;
         setTimeout(() => {
           hideBanner = true;
+          ytplayer.playVideo();
         }, 900);
 
         ytplayer.playVideo();
